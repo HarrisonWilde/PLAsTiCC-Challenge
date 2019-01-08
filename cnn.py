@@ -1,8 +1,3 @@
-# REFERENCES
-# https://www.kaggle.com/aantonova/cnn-signals-as-images/notebook
-# The setup for this model is inspired by the efforts of the contributor above, namely in the BatchGenerator approach and decisions made around how to put the time series data into bins
-# Note that due to me rushing at the end, I didn't manage to modularise this code and put it into the nice separate function files as I did with the others, apologies for that
-
 import numpy as np
 import pandas as pd
 from scipy.stats import skew
@@ -14,7 +9,6 @@ import time
 import warnings
 warnings.simplefilter(action = 'ignore')
 
-# Try removing tensorflow import if it doesn't run, but I imagine it will work as I assume many people will be using keras and tensorflow
 import tensorflow as tf
 from keras.models import load_model, Sequential
 from keras.layers import Input, Conv2D, BatchNormalization, LeakyReLU, GlobalAveragePooling2D, Flatten, Dropout, Dense

@@ -1,7 +1,3 @@
-# REFERENCES
-# The feature extraction process is taken from this kernel https://www.kaggle.com/cttsai/forked-lgbm-w-ideas-from-kernels-and-discuss
-# Justified in the report
-
 import pandas as pd
 import numpy as np; np.warnings.filterwarnings('ignore')
 
